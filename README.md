@@ -23,3 +23,16 @@ To share an action, please follow these steps:
 - Commit and push your local branch to your forked repository
 - On your forked repository at GitHub, create a pull request (see this [guide](https://help.github.com/articles/creating-a-pull-request) for more info)
 - We will review and let you know if we want to make the action official!
+
+When you create an action, use the following format as a heading so people know who created it and what it does:
+
+```js
+/**
+ * Alignment: Align top
+ * @desc Aligns the selected layer to the top of the screen in the canvas
+ * @author Pixate, Inc.
+ * @version 1.0
+ */
+```
+
+Enjoy! 
