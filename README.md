@@ -1,4 +1,4 @@
-# pixate-actions
+# Pixate Actions
 
 This is the official directory of Actions you can use in [Pixate](http://pixate.com). Actions let you script agains the Pixate editor, creating or manipulating layers, animations, and interactions.
 
