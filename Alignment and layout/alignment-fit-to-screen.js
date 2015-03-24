@@ -1,11 +1,13 @@
 /**
  * Alignment: Fit to screen
- * @desc Resizes and moves the selected layer to fill the screen
+ * @desc Resizes and moves the selected layers to fill the screen
  * @author Pixate, Inc.
- * @version 1.0
+ * @version 1.1
  */
 
-var layer = getSelectedLayer();
-layer.y = layer.x = 0;
-layer.width = Screen.width;
-layer.height = Screen.height;
+var layers = getSelectedLayers();
+layers.forEach(function(layer) {
+    layer.y = layer.x = 0;
+    layer.width = Screen.width;
+    layer.height = Screen.height;
+});

@@ -1,9 +1,11 @@
 /**
  * Alignment: Align top
- * @desc Aligns the selected layer to the top of the screen in the canvas
+ * @desc Aligns selected layers to the top of the screen in the canvas
  * @author Pixate, Inc.
- * @version 1.0
+ * @version 1.1
  */
 
-var layer = getSelectedLayer();
-layer.y = 0;
+var layers = getSelectedLayers();
+layers.forEach(function(layer) {
+   layer.y = 0;
+});

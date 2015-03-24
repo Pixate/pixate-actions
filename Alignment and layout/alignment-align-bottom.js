@@ -1,9 +1,11 @@
 /**
  * Alignment: Align bottom
- * @desc Aligns the selected layer to the bottom of the screen in the canvas
+ * @desc Aligns selected layers to the bottom of the screen in the canvas
  * @author Pixate, Inc.
- * @version 1.0
+ * @version 1.1
  */
 
-var layer = getSelectedLayer();
-layer.bottom = Screen.height;
+var layers = getSelectedLayers();
+layers.forEach(function(layer) {
+   layer.bottom = Screen.height; 
+});

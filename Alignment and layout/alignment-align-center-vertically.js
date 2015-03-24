@@ -1,9 +1,11 @@
 /**
  * Alignment: Align center vertically
- * @desc Aligns the selected layer to the center of the screen in the canvas
+ * @desc Aligns all selected layers to center of the screen in the canvas
  * @author Pixate, Inc.
- * @version 1.0
+ * @version 1.1
  */
 
-var layer = getSelectedLayer();
-layer.centerY = Screen.centerY;
+var layers = getSelectedLayers();
+layers.forEach(function(layer) {
+   layer.centerY = Screen.centerY; 
+});

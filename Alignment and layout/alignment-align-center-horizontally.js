@@ -1,9 +1,11 @@
 /**
  * Alignment: Align center horizontally
- * @desc Aligns the selected layer to middle of the screen in the canvas
+ * @desc Aligns all selected layers to middle of the screen in the canvas
  * @author Pixate, Inc.
- * @version 1.0
+ * @version 1.1
  */
 
-var layer = getSelectedLayer();
-layer.centerX = Screen.centerX;
+var layers = getSelectedLayers();
+layers.forEach(function(layer) {
+   layer.centerX = Screen.centerX; 
+});
